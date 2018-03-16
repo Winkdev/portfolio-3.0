@@ -1,5 +1,8 @@
 @import 'compass';
 @import 'compass/css3';
+@import 'partials/normalize';
 @import 'partials/variables';
+@import 'partials/animation';
+@import 'partials/mixins';
 @import 'partials/style';
 @import 'partials/layout';
