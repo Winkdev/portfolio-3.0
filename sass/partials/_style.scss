@@ -38,14 +38,18 @@ body, html{
   // centered
   cursor: pointer;
   @include box-shadow(0px 0px 30px 0px white);
-  top:calc(50% - 55px);
+  top:calc(50% - 55px - 10px);
   left:calc(50% - 55px);
 }
 
 .circles{
-  width:100px;
-  height:100px;
-  background: red;
+  background: $brown;
+  height:0;
+  width:0;
   @include border-radius(100%);
   position: absolute;
+  left:50%;
+  top:50%;
+  @include transform(translate(-50%,-50%));
+  @include box-shadow(0px 0px 30px 0px white);
 }
